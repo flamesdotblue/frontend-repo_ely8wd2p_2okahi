@@ -42,17 +42,17 @@ const projects = [
 export default function ProjectsGrid() {
   return (
     <section id="projects" className="px-6 py-20 max-w-6xl mx-auto">
-      <h3 className="text-4xl font-semibold text-center mb-12 bg-gradient-to-r from-yellow-300 via-emerald-300 to-sky-300 bg-clip-text text-transparent">
+      <h3 className="text-4xl font-semibold text-center mb-12 bg-gradient-to-r from-emerald-300 via-teal-300 to-cyan-300 bg-clip-text text-transparent">
         Projects
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((p, idx) => (
           <article
             key={p.title}
-            className="group relative rounded-xl border border-yellow-400/40 bg-zinc-900/70 p-5 shadow transition hover:border-yellow-300/70 hover:shadow-yellow-300/10"
+            className="group relative rounded-xl border border-emerald-400/30 bg-[#0d1117] p-5 shadow transition hover:border-emerald-300/60 hover:shadow-emerald-300/10"
             style={{ animation: `fadeInUp 0.6s ease ${idx * 0.08}s 1 forwards` }}
           >
-            <h4 className="text-lg font-semibold mb-2 bg-gradient-to-r from-yellow-200 to-amber-300 bg-clip-text text-transparent">
+            <h4 className="text-lg font-semibold mb-2 bg-gradient-to-r from-emerald-200 to-teal-300 bg-clip-text text-transparent">
               {p.title}
             </h4>
             <p className="text-zinc-300/90 mb-4 leading-relaxed">{p.desc}</p>
@@ -60,11 +60,11 @@ export default function ProjectsGrid() {
               href={p.href}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 text-yellow-300 font-semibold text-sm hover:underline"
+              className="inline-flex items-center gap-2 text-emerald-300 font-semibold text-sm hover:underline"
             >
               {p.cta} <ExternalLink size={16} />
             </a>
-            <div className="pointer-events-none absolute -inset-0.5 rounded-xl bg-gradient-to-br from-yellow-400/0 via-amber-400/0 to-fuchsia-500/0 opacity-0 blur-xl transition group-hover:opacity-40" />
+            <div className="pointer-events-none absolute -inset-0.5 rounded-xl bg-gradient-to-br from-emerald-400/0 via-teal-400/0 to-cyan-500/0 opacity-0 blur-xl transition group-hover:opacity-40" />
           </article>
         ))}
       </div>
