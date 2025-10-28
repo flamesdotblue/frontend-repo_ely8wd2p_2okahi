@@ -43,7 +43,7 @@ const EditorPane = () => {
   ]
 }`;
 
-  const contact = `export default function Contact() {\n  return (\n    <div className=\"contact\">\n      <a href=\"mailto:hello@example.com\">Email</a>\n      <a href=\"#\">LinkedIn</a>\n      <a href=\"#\">GitHub</a>\n    </div>\n  );\n}`;
+  const contact = `export default function Contact() {\n  return (\n    <div className=\"contact\">\n      <a href=\"mailto:rugveddevmain@gmail.com\">Email</a>\n      <a href=\"#\">LinkedIn</a>\n      <a href=\"#\">GitHub</a>\n    </div>\n  );\n}`;
 
   return (
     <div className="flex h-full w-full flex-col">
